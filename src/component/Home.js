@@ -40,7 +40,7 @@ const Home = () => {
                         {/* Display data from state variable */}
                         {users.map(user => (
                             < tr class="" key={user.id} >
-                                <td scope="row">{user.name}</td>
+                                <td>{user.name}</td>
                                 <td>{user.email}</td>
                                 <td>{user.username}</td>
                             </tr >

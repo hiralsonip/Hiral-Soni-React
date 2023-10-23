@@ -26,7 +26,7 @@ const Login = () => {
         }
     }
 
-    const iconStyle = {
+    const iconStyleFacebook = {
         color: 'white',
         background: '#4267B2',
         width: '30px',
@@ -41,14 +41,14 @@ const Login = () => {
             <div className='social-media'>
                 <div className='social-media-inner'>
                     <Link to="https://www.facebook.com" target='_blank'>
-                        <FaFacebookSquare style={iconStyle} />
-                        <span>Facebook</span>
+                        <FaFacebookSquare style={iconStyleFacebook} />
+                        <span className='fb-text'>Facebook</span>
                     </Link>
                 </div>
-                <div className='social-media-inner'>
-                    <Link to="https://www.google.ca/" target='_blank'>
-                        <FaGoogle style={iconStyle} />
-                        <span>Google</span>
+                <div className='social-media-google'>
+                    <Link to="https://mail.google.com/mail/u/0/#inbox" target='_blank'>
+                        <img src={require("../images/google-icon.png")} alt='Google Icon' className='img' />
+                        <span className='google-text'>Google</span>
                     </Link>
                 </div>
             </div>
